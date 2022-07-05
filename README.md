@@ -6,9 +6,9 @@ https://github.com/anthonyjgrove/react-google-login
 https://github.com/prescottprue/react-google-button
 
 
-## packages/app
+## packages/login-app
 
-Demo react page containing some login buttons.
+Demo react app containing some google login buttons.
 
 **Default react-google-login**
 
