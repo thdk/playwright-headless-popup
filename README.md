@@ -3,6 +3,7 @@
 Repos used for authentication and styling the google button:
 
 https://github.com/anthonyjgrove/react-google-login
+
 https://github.com/prescottprue/react-google-button
 
 
