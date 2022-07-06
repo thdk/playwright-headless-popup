@@ -45,6 +45,17 @@ test.describe('react-google-login-4 with custom render function returning react 
   });
 });
 
+test.describe('login-5 simple button opening popup', () => {
+  test("should open popup to login with google", async ({ page }) => {
+    await page.goto("http://localhost:3000/login5");
+    const [popup] = await Promise.all([
+      page.waitForEvent('popup'),
+      page.locator('text=Sign in with Google').click(),
+    ]);
+    await popup.waitForLoadState();
+  });
+});
+
 
 
 // test("should open clover popup to login with google", async ({ page }) => {
