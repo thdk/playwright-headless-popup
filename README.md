@@ -1,5 +1,7 @@
 # Repro to investigate why google login popup doesn't open in headless playwright test
 
+**Update:** popups aren't working in headless browser when the click handler is on a `div` element instead of on a `button` element.
+
 Repos used for authentication and styling the google button:
 
 https://github.com/anthonyjgrove/react-google-login
@@ -7,22 +9,11 @@ https://github.com/anthonyjgrove/react-google-login
 https://github.com/prescottprue/react-google-button
 
 
+
+
 ## packages/login-app
 
 Demo react app containing some google login buttons.
-
-**Default react-google-login**
-
-http://localhost/login1
-
-**react-google-login with custom render function returning a google-login-button component**
-
-http://localhost/login2
-
-**react-google-login with custom render function returning a native button**
-
-http://localhost/login3
-
 
 ```sh
 yarn install
